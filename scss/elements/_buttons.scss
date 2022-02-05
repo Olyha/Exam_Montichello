@@ -1,0 +1,25 @@
+.buttons  {
+  padding: 15px 40px;
+  border: 1px solid $nav-text-color;
+    &:hover {
+    background-position: right center;
+    background-image: linear-gradient(to right, #eae225 20%, #9299e5 51%, #ffffff 100%);
+    background-size: 150% auto;
+    box-shadow: 0 0 20px rgb(193, 221, 239);
+    transition: .5s;
+      border: 1px solid #faf9e9;
+  }
+  &__block {
+    padding-top: 40px;
+    padding-bottom: 55px;
+  }
+  &__submit {
+    padding: 8px 30px;
+    background-color: $main-color;
+    margin-left: 12vw;
+  }
+}
+
+
+
+

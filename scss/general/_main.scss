@@ -1,0 +1,33 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  border: 3px solid #000000;
+  background-color: $main-color;
+}
+main {
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+}
+section {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 10vh;
+}
+.img_properties {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.flex_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex_position {
+  display: flex;
+  justify-content: space-evenly;
+  //align-items: center;
+}
