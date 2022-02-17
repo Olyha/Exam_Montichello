@@ -10,13 +10,16 @@
       border: 1px solid #faf9e9;
   }
   &__block {
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 55px;
   }
   &__submit {
     padding: 8px 30px;
     background-color: $main-color;
-    margin-left: 12vw;
+    margin-left: 9vw;
+    @media screen and (max-width: $st) {
+      margin-left: 0vw;
+    }
   }
 }
 

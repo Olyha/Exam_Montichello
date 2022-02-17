@@ -5,57 +5,49 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/libs/slick.css">
+    <link rel="stylesheet" href="css/libs/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&family=Source+Sans+Pro&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="https://icons.getbootstrap.com">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/fave.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://icons.getbootstrap.com">
     <title>MONTICELLO</title>
 </head>
 <body>
 <header class="header">
-<!--    <img class="img_h" src="images/backgrounds/tu-tram-pham-202263 1.png" alt="#">-->
     <div class= "header__containe flex_column">
         <div class="flex_position block_nav">
             <div >
                 <a href="#"><img class="logo" src="images/Logo.png" alt="#"></a>
             </div>
-<!--            <nav>-->
-<!--                <ul>-->
-<!--                    <li class="nav__list"><a class="text__nav" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="circle" viewBox="0 0 16 16">-->
-<!--                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>-->
-<!--                    </svg>ABOUT US</a> </li>-->
-<!--                    <li class="nav__list"><a class="text__nav" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="circle" viewBox="0 0 16 16">-->
-<!--                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>-->
-<!--                    </svg>PROJECTS</a> </li>-->
-<!--                    <li class="nav__list"><a class="text__nav" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="circle" viewBox="0 0 16 16">-->
-<!--                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>-->
-<!--                    </svg>NEWS</a> </li>-->
-<!--                    <li class="nav__list"><a class="text__nav" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="circle" viewBox="0 0 16 16">-->
-<!--                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>-->
-<!--                    </svg>CONTACT</a> </li>-->
-<!--                </ul>-->
-<!--            </nav>-->
-<!--            <div>-->
+            <div class="menu" id="sections">
                 <div class="form_radio">
-                    <input id="radio-1" type="radio" name="radio" value="1" checked>
-                    <label for="radio-1"><a class="text__nav" href="#">ABOUT US</a></label>
+                    <input id="radio-1" type="radio" name="radio" value="1" onclick='location.href="#proposal"' checked>
+                    <label for="radio-1"><a class="text__nav" href="#proposal">ABOUT US</a></label>
                 </div>
                 <div class="form_radio">
-                    <input id="radio-2" type="radio" name="radio" value="2">
-                    <label for="radio-2"><a class="text__nav" href="#">PROJECTS</a></label>
+                    <input id="radio-2" type="radio" name="radio" value="2" onclick='location.href="#gallery"'>
+                    <label for="radio-2"><a class="text__nav" href="#gallery">PROJECTS</a></label>
                 </div>
                 <div class="form_radio">
-                    <input id="radio-3" type="radio" name="radio" value="3">
-                    <label for="radio-3"><a class="text__nav" href="#">NEWS</a></label>
+                    <input id="radio-3" type="radio" name="radio" value="3" onclick='location.href="#news"'>
+                    <label for="radio-3"><a class="text__nav" href="#news">NEWS</a></label>
                 </div>
                 <div class="form_radio">
-                    <input id="radio-4" type="radio" name="radio" value="4">
-                    <label for="radio-4"><a class="text__nav" href="#">CONTACT</a></label>
+                    <input id="radio-4" type="radio" name="radio" value="4" onclick='location.href="#contact"'>
+                    <label for="radio-4"><a class="text__nav" href="#contact">CONTACT</a></label>
                 </div>
-<!--            </div>-->
-
-
+            </div>
+            <div class="menu__hamburger">
+                <div class="hamburger__box" id="jsMenuMobile">
+                    <span class="hamburger__inner">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                         </svg>
+                    </span>
+                </div>
+            </div>
             <div class="social_block">
                 <a class="social" href="#"><img src="images/icons/Group 3.png" alt="#"></a>
                 <a class="social" href="#"><img src="images/icons/Group 2.png" alt="#"></a>
@@ -67,28 +59,28 @@
             <h3 class="subtitle subtitle__header">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
         </div>
         <div class="radio">
-            <input class="radio__slide" id="radio" type="radio" name="item">
-            <input class="radio__slide" type="radio" name="item">
-            <input class="radio__slide" type="radio" name="item">
-            <input class="radio__slide" type="radio" name="item">
-            <input class="radio__slide" type="radio" name="item">
+            <ul class="radio__nav">
+                <li><input class="radio__slide" id="radio" type="radio" name="item" onclick='location.href="#"' checked></li>
+                <li><input class="radio__slide" type="radio" name="item" onclick='location.href="#proposal"'></li>
+                <li><input class="radio__slide" type="radio" name="item" onclick='location.href="#news"'></li>
+                <li><input class="radio__slide" type="radio" name="item" onclick='location.href="#gallery"'></li>
+                <li><input class="radio__slide" type="radio" name="item" onclick='location.href="#contact"'></li>
+            </ul>
         </div>
-
-        <div class="scroll">
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <div class="scroll" id="scroll">
+            <a href="#proposal"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-chevron-down" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
             </svg> </a>
         </div>
-<!--        <scroll></scroll>-->
     </div>
 </header>
 
 <main>
-    <section>
+    <section id="proposal">
         <img class="line" src="images/icons/line2.png" alt="#">
         <h2 class="title title__paragrapfs">WHAT WE DO</h2>
         <div class="project">
-            <div >
+            <div class="project__img">
                 <img class="img_properties" src="images/trade_center.jpg" alt="#">
             </div>
             <div class="project__text">
@@ -111,61 +103,84 @@
                 </div>
                 <p><a class="text__location" href="#"><img src="images/icons/location.png" alt="#"> Hong Kong - 1588 feet</a></p>
             </div>
-            <div>
+            <div class="project__img">
                 <img class="img_properties" src="images/Commerce_center.jpg" alt="#">
             </div>
         </div>
     </section>
 
-    <section class="news">
+    <section class="news" id="news">
         <img class="line line__news" src="images/icons/line2.png" alt="#">
         <h2 class="title title__paragrapfs news__title">LATEST NEWS</h2>
-        <div class="news__click-class">
-            <div class="news__blocks">
-<!--                <div>-->
-<!--                    <img src="" alt="">-->
-<!--                    <div>-->
-<!--                        <h3></h3>-->
-<!--                        <p></p>-->
-<!--                    </div>-->
-<!--                </div>-->
-                <img src="images/window_news.jpg" alt="#">
-                <div class="news__blocks_info">
-                    <h3 class="title subtitle-section">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
-                    <p class="text__paragrapfs">Free directories: directories are perfect for customers that are searching for...</p>
-                    <div class="name">
-                        <img class="name__img" src="images/photo_Alja.jpg" alt="#">
-                        <div>
-                            <p>ALJA BRUN</p>
-                            <p class="data subtitle subtitle__buttons">20 Jan 2020</p>
+        <div class="slide_block">
+            <div class="news__click-class" id="news_slide">
+                <div class="news__blocks" >
+                    <img src="images/window_news.jpg" alt="#">
+                    <div class="news__blocks_info">
+                        <h3 class="title subtitle-section1">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                        <p class="text__paragrapfs">Free directories: directories are perfect for customers that are searching for...</p>
+                        <div class="name">
+                            <img class="name__img" src="images/photo_Alja.jpg" alt="#">
+                            <div>
+                                <p>ALJA BRUN</p>
+                                <p class="data subtitle subtitle__buttons">20 Jan 2020</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="news__blocks">
-                <img src="images/fasad_news.jpg" alt="#">
-                <div class="news__blocks_info">
-                    <h3 class="title subtitle-section">EFFECTIVE ADVERTISING POINTERS.</h3>
-                    <p class="text__paragrapfs">Having a home based business is a wonderful asset to your life...</p>
-                    <div class="name">
-                        <img class="name__img" src="images/photo_Dominic.jpg" alt="#">
-                        <div>
-                            <p>DOMINIC FREEMAN</p>
-                            <p class="data subtitle subtitle__buttons">13 Dec 2019</p>
+                <div class="news__blocks">
+                    <img src="images/fasad_news.jpg" alt="#">
+                    <div class="news__blocks_info">
+                        <h3 class="title subtitle-section">EFFECTIVE ADVERTISING POINTERS.</h3>
+                        <p class="text__paragrapfs">Having a home based business is a wonderful asset to your life...</p>
+                        <div class="name">
+                            <img class="name__img" src="images/photo_Dominic.jpg" alt="#">
+                            <div>
+                                <p>DOMINIC FREEMAN</p>
+                                <p class="data subtitle subtitle__buttons">13 Dec 2019</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="news__blocks">
-                <img src="images/ghost_news.jpg" alt="#">
-                <div class="news__blocks_info">
-                    <h3 class="title subtitle-section">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
-                    <p class="text__paragrapfs">There are many things that are important to catalog design...</p>
-                    <div class="name">
-                        <img class="name__img" src="images/photo_Alice.jpg" alt="#">
-                        <div>
-                            <p>ALICE WARD</p>
-                            <p class="data subtitle subtitle__buttons">30 Nov 2019</p>
+                <div class="news__blocks">
+                    <img src="images/ghost_news.jpg" alt="#">
+                    <div class="news__blocks_info">
+                        <h3 class="title subtitle-section">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                        <p class="text__paragrapfs">There are many things that are important to catalog design...</p>
+                        <div class="name">
+                            <img class="name__img" src="images/photo_Alice.jpg" alt="#">
+                            <div>
+                                <p>ALICE WARD</p>
+                                <p class="data subtitle subtitle__buttons">30 Nov 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__blocks" >
+                    <img src="images/window_news.jpg" alt="#">
+                    <div class="news__blocks_info">
+                        <h3 class="title subtitle-section">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                        <p class="text__paragrapfs">Free directories: directories are perfect for customers that are searching for...</p>
+                        <div class="name">
+                            <img class="name__img" src="images/photo_Alja.jpg" alt="#">
+                            <div>
+                                <p>ALJA BRUN</p>
+                                <p class="data subtitle subtitle__buttons">20 Jan 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__blocks">
+                    <img src="images/fasad_news.jpg" alt="#">
+                    <div class="news__blocks_info">
+                        <h3 class="title subtitle-section">EFFECTIVE ADVERTISING POINTERS.</h3>
+                        <p class="text__paragrapfs">Having a home based business is a wonderful asset to your life...</p>
+                        <div class="name">
+                            <img class="name__img" src="images/photo_Dominic.jpg" alt="#">
+                            <div>
+                                <p>DOMINIC FREEMAN</p>
+                                <p class="data subtitle subtitle__buttons">13 Dec 2019</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -173,7 +188,7 @@
         </div>
     </section>
 
-    <section class="gallery flex_column" >
+    <section class="gallery flex_column" id="gallery">
         <img class="line" src="images/icons/line2.png" alt="#">
         <h2 class="title title__paragrapfs">GALLERY</h2>
         <div class="gallery__parent-flex">
@@ -181,26 +196,26 @@
                 <img class="around" src="images/360 1.png" alt="#">
             </div>
             <div class="gallery__child-flex">
-                <div class="gallery__img"><img src="images/Image 2.png" alt="#"></div>
-                <div class="gallery__img"><img src="images/Image 3.png" alt="#"></div>
-                <div class="gallery__img"><img src="images/Image 4.png" alt="#"></div>
-                <div class="gallery__img"><img src="images/Image 5.png" alt="#"></div>
+                <div class="gallery__img"><img class="img_properties" src="images/Image 2.png" alt="#"></div>
+                <div class="gallery__img"><img class="img_properties" src="images/Image 3.png" alt="#"></div>
+                <div class="gallery__img"><img class="img_properties" src="images/Image 4.png" alt="#"></div>
+                <div class="gallery__img"><img class="img_properties" src="images/Image 5.png" alt="#"></div>
             </div>
         </div>
         <div class="buttons__block">
             <a class="subtitle subtitle__buttons buttons" href="#">SEE MORE</a>
         </div>
     </section>
-    
+
     <section class="map">
-        <map name="#"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6051.3581123916465!2d-73.906096!3d40.68104!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d32696277b0abfa!2sEastern%20Floral!5e0!3m2!1sru!2sua!4v1643641693331!5m2!1sru!2sua"
+        <map name="#" id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6051.3581123916465!2d-73.906096!3d40.68104!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d32696277b0abfa!2sEastern%20Floral!5e0!3m2!1sru!2sua!4v1643641693331!5m2!1sru!2sua"
                               width="100%" height="700" style="border:0;" allow="fullscreen" loading="lazy"></iframe>
         </map>
     </section>
 </main>
 
 <footer class="footer flex_column">
-    <div class="footer__contacts">
+    <div class="footer__contacts" id="contact">
         <img class="line" src="images/icons/line2.png" alt="#">
         <h2 class="title title__paragrapfs">GET IN TOUCH</h2>
         <div class="footer__contacts_text">
@@ -249,11 +264,12 @@
         </div>
     </div>
 </footer>
-<script
-        src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous">
 </script>
+<script src="js/libs/slick/slick.min.js"></script>
+<script src="js/slick.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

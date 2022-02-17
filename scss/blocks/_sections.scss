@@ -2,18 +2,35 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-   margin-top: 13vh;
+  margin-top: 76px;
+  width: 100%;
+  align-items: flex-end;
+  @media screen and (max-width: $xl) {
+    justify-content: center;
+    align-items: center;
+  }
   &__secondary {
     justify-content: flex-end;
+    margin-top: 140px;
     margin-bottom: 15vh;
+    @media screen and (max-width: $xl) {
+      justify-content: center;
+      flex-wrap: wrap-reverse;
+      margin-top: 40px;
+    }
   }
   &__text {
-    width: 30vw;
-    margin-top: 15vh;
+    width: 478px;
     text-align: start;
-    padding-left: 65px;
+    padding-left: 4vw;
     &_secondary {
-      padding-right: 65px;
+      padding-right: 4vw;
+    }
+  }
+  &__img {
+    width: 52%;
+    @media screen and (max-width: $xl) {
+      width: 80%;
     }
   }
 }
@@ -21,34 +38,41 @@
 
 .news {
   width: 100%;
-  height: 1000px;
+  height: 935px;
   background-image: url("../images/backgrounds/latestback.png");
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 14px;
   &__title {
     color: $main-color!important;
   }
+  .slide_block {
+    max-width: 1200px;
+    margin: auto;
+  }
   &__click-class {
-    display: flex;
-    justify-content: center;
     margin-top: 90px;
+    margin-left: 2vw;
+    margin-right: 2vw;
   }
   &__blocks {
-    width: 370px;
-    height: 540px;
+    max-width: 380px;
+    width: 380px;
+    height: 520px;
     background-color: $main-color;
-    margin: 15px;
+    margin: 20px;
     text-align: start;
+    overflow: hidden;
     &_info {
-      margin: 20px;
+      margin: 10px;
       padding-top: 2px;
     }
     .name {
       display: flex;
       align-items: center;
-      margin-top: 40px;
+      margin-bottom: 25px;
       &__img {
-        height: 70px;
+        height: 60px;
         border-radius: 50%;
         margin-right: 20px;
       }
@@ -56,24 +80,16 @@
   }
 }
 
+
 .gallery {
   &__parent-flex {
     display: flex;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
     flex-wrap: wrap;
-  }
-  &__around {
-
-  }
-  &__child-flex {
-    width: 590px;
-    height: 440px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  &__img {
-    margin: 5px;
+    @media screen and (max-width: $xl) {
+      display: contents;
+    }
   }
   &__around {
     background-image: url("../images/Mask group.png");
@@ -83,10 +99,36 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: $ml) {
+      width: 90%;
+      background-position: right;
+    }
+    .around {
+      //transform-style: preserve-3d;
+      animation: main-rotate 8s infinite linear;
+      @keyframes main-rotate {
+        100% {
+          transform: rotateY(360deg);
+        }
+      }
+    }
+  }
+  &__child-flex {
+    width: 590px;
+    height: 440px;
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width: $xl) {
+      margin-bottom: inherit;
+    }
+    @media screen and (max-width: $ml) {
+      display: contents;
+    }
+  }
+  &__img {
+    margin: 5px;
+    @media screen and (max-width: $ml) {
+      width: 90%;
+    }
   }
 }
-
-
-
-
-

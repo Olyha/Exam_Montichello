@@ -29,5 +29,7 @@ section {
 .flex_position {
   display: flex;
   justify-content: space-evenly;
-  //align-items: center;
+  @media screen and (max-width: $st) {
+    display: contents;
+  }
 }
