@@ -635,6 +635,16 @@ input:checked {
   max-width: 1200px;
   margin: auto;
 }
+@media screen and (max-width: 768px) {
+  .news .slide_block {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .news .slide_block {
+    width: 330px;
+  }
+}
 .news__click-class {
   margin-top: 90px;
   margin-left: 2vw;

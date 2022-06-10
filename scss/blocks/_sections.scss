@@ -49,6 +49,12 @@
   .slide_block {
     max-width: 1200px;
     margin: auto;
+    @media screen and (max-width: $st) {
+      width: 400px;
+    }
+    @media screen and (max-width: $mm) {
+      width: 330px;
+    }
   }
   &__click-class {
     margin-top: 90px;
